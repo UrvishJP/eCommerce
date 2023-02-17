@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import { Button } from "../styles/Button";
-import { FaDiscord, FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitch, FaTwitter, FaYoutube } from "react-icons/fa";
+import {FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -23,6 +23,7 @@ const Footer = () => {
           </div>
         </section>
         {/* footer section */}
+        <hr />
 
         <footer>
           <div className="container grid grid-four-column" style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
@@ -68,16 +69,11 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="footer-bottom--section">
-            <hr />
-            <div className="container grid grid-two-column ">
+          <div className="footer-bottom--section"  style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
+            <div className="container ">
               <p>
-              Copyright ©️ {new Date().getFullYear()} Urvish Prajapati. All Rights Reserved.
+              Copyright ©️ {new Date().getFullYear()} urvishmeghani111@gmail.com
               </p>
-              <div>
-                <p>PRIVACY POLICY</p>
-                <p>TERMS & CONDITIONS</p>
-              </div>
             </div>
           </div>
         </footer>
@@ -136,7 +132,7 @@ const Wrapper = styled.section`
   }
 
   .footer-bottom--section {
-    padding-top: 9rem;
+    padding-top: 5rem;
 
     hr {
       margin-bottom: 2rem;
