@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { Button } from "./styles/Button";
 
+
 const ErrorPage = () => {
   return (
     <Wrapper>
