@@ -49,10 +49,11 @@ const SingleProduct = () => {
             <MyImage imgs={image} />
           </div>
 
-          {/* product data  */}
+          {/* product dAta  */}
           <div className="product-data">
             <h2>{name}</h2>
             <Star stars={stars} reviews={reviews} />
+
             <p className="product-data-price">
               MRP:
               <del>
@@ -71,12 +72,12 @@ const SingleProduct = () => {
 
               <div className="product-warranty-data">
                 <TbReplace className="warranty-icon" />
-                <p>7 Days Replacement</p>
+                <p>30 Days Replacement</p>
               </div>
 
               <div className="product-warranty-data">
                 <TbTruckDelivery className="warranty-icon" />
-                <p>1 Day Delivery </p>
+                <p>Thapa Delivered </p>
               </div>
 
               <div className="product-warranty-data">
@@ -87,7 +88,7 @@ const SingleProduct = () => {
 
             <div className="product-data-info">
               <p>
-                Availability:
+                Available:
                 <span> {stock > 0 ? "In Stock" : "Not Available"}</span>
               </p>
               <p>
