@@ -131,6 +131,11 @@ const Nav = () => {
         transition: all 3s linear;
       }
 
+      .img{
+        position: relative;
+        right: 20px;
+      }
+
       .active .navbar-lists {
         visibility: visible;
         opacity: 1;
@@ -210,6 +215,7 @@ const Nav = () => {
           {isAuthenticated && (
             <div className="cart-user--profile">
               <img
+                className="img"
                 src={user.picture}
                 alt="User pic"
                 style={{
