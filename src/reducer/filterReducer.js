@@ -7,18 +7,6 @@ const filterReducer = (state, action) => {
         priceArr
       );
 
-      // 1way
-      // console.log(Math.max.apply(null, priceArr));
-
-      // let maxPrice = priceArr.reduce(
-      //   (initialVal, curVal) => Math.max(initialVal, curVal),
-      //   0
-      // );
-      // console.log(
-      //   "🚀 ~ file: filterReducer.js ~ line 16 ~ filterReducer ~ maxPrice",
-      //   maxPrice
-      // );
-
       let maxPrice = Math.max(...priceArr);
       console.log(
         "🚀 ~ file: filterReducer.js ~ line 23 ~ filterReducer ~ maxPrice",
@@ -127,7 +115,7 @@ const filterReducer = (state, action) => {
 
       if (price === 0) {
         tempFilterProduct = tempFilterProduct.filter(
-          (curElem) => curElem.price == price
+          (curElem) => curElem.price === price
         );
       } else {
         tempFilterProduct = tempFilterProduct.filter(
