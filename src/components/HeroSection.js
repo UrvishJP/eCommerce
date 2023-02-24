@@ -13,11 +13,9 @@ const HeroSection = ({myData}) => {
             <p className="intro-data">Welcome to </p>
             <h1> {name} </h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-              atque temporibus veniam doloribus libero ad error omnis voluptates
-              animi! Suscipit sapiente.
+            eMart offers an unparalleled shopping experience with a wide range of products at unbeatable prices, all conveniently accessible online.
             </p>
-            <NavLink>
+            <NavLink to="/products">
               <Button>shop now</Button>
             </NavLink>
           </div>
