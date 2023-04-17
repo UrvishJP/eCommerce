@@ -8,7 +8,6 @@ import FormatPrice from "./Helpers/FormatPrice";
 const Cart = () => {
   const { cart, clearCart, total_price, shipping_fee } = useCartContext();
 
-
   if (cart?.length === 0) {
     return (
       <EmptyDiv>
@@ -35,7 +34,12 @@ const Cart = () => {
         </div>
         <hr />
         <div className="cart-two-button">
-          <NavLink to="/products">
+          <NavLink
+            to="/products"
+            onClick={() => {
+              window.scrollTo({ top: 0, left: 0 });
+            }}
+          >
             <Button> continue Shopping </Button>
           </NavLink>
           <Button className="btn btn-clear" onClick={clearCart}>

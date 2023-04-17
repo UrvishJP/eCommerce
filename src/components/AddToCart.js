@@ -33,7 +33,8 @@ const AddToCart = ({ product }) => {
                 key={index}
                 style={{ backgroundColor: curColor }}
                 className={color === curColor ? "btnStyle active" : "btnStyle"}
-                onClick={() => setColor(curColor)}>
+                onClick={() => setColor(curColor)}
+              >
                 {color === curColor ? <FaCheck className="checkStyle" /> : null}
               </button>
             );
@@ -49,7 +50,14 @@ const AddToCart = ({ product }) => {
       />
 
       <NavLink to="/cart" onClick={() => addToCart(id, color, amount, product)}>
-        <Button className="btn">Add To Cart</Button>
+        <Button
+          className="btn"
+          onClick={() => {
+            window.scrollTo({ top: 0, left: 0});
+          }}
+        >
+          Add To Cart
+        </Button>
       </NavLink>
     </Wrapper>
   );

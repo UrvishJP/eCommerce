@@ -2,7 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import { Button } from "../styles/Button";
-import {FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter} from "react-icons/fa";
+import {
+  FaFacebook,
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -12,12 +18,17 @@ const Footer = () => {
           <div className="grid grid-two-column">
             <div>
               <h3>Ready to get started?</h3>
-              <h3>Talk to us today.</h3>
+              <h3>Make the things yours.</h3>
             </div>
 
             <div>
-              <Button className="btn hireme-btn">
-                <NavLink to="/"> Get Started </NavLink>
+              <Button
+                className="btn hireme-btn"
+                onClick={() => {
+                  window.scrollTo({ top: 0, left: 0});
+                }}
+              >
+                <NavLink to="/products"> Get Started </NavLink>
               </Button>
             </div>
           </div>
@@ -26,42 +37,57 @@ const Footer = () => {
         <hr />
 
         <footer>
-          <div className="container grid grid-four-column" style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
+          <div
+            className="container grid grid-four-column"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
             <div className="footer-social">
-              <h3 style={{color:'black', display:'flex', alignItems:'center', justifyContent:'center'}}>Urvish Prajapati</h3>
+              <h3
+                style={{
+                  color: "black",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                Urvish Prajapati
+              </h3>
               <div className="footer-social--icons">
-              <div>
+                <div>
                   <a
                     href="https://www.linkedin.com/in/urvish-j-p/"
-                    target="_blank">
+                    target="_blank"
+                  >
                     <FaLinkedin className="icons" />
                   </a>
                 </div>
                 <div>
-                  <a
-                    href="https://github.com/UrvishJP"
-                    target="_blank">
+                  <a href="https://github.com/UrvishJP" target="_blank">
                     <FaGithub className="icons" />
                   </a>
                 </div>
                 <div>
                   <a
                     href="https://www.instagram.com/urvish_j_p/"
-                    target="_blank">
+                    target="_blank"
+                  >
                     <FaInstagram className="icons" />
                   </a>
                 </div>
                 <div>
-                  <a
-                    href="https://twitter.com/UrvishJP"
-                    target="_blank">
+                  <a href="https://twitter.com/UrvishJP" target="_blank">
                     <FaTwitter className="icons" />
                   </a>
                 </div>
                 <div>
                   <a
                     href="https://www.facebook.com/urvish.prajapati.167"
-                    target="_blank">
+                    target="_blank"
+                  >
                     <FaFacebook className="icons" />
                   </a>
                 </div>
@@ -69,10 +95,18 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="footer-bottom--section"  style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
+          <div
+            className="footer-bottom--section"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
             <div className="container ">
               <p>
-              Copyright ©️ {new Date().getFullYear()} urvishmeghani111@gmail.com
+                Copyright ©️ {new Date().getFullYear()}{" "}
+                urvishmeghani111@gmail.com
               </p>
             </div>
           </div>
