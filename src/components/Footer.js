@@ -61,12 +61,13 @@ const Footer = () => {
                   <a
                     href="https://www.linkedin.com/in/urvish-j-p/"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <FaLinkedin className="icons" />
                   </a>
                 </div>
                 <div>
-                  <a href="https://github.com/UrvishJP" target="_blank">
+                  <a href="https://github.com/UrvishJP" target="_blank" rel="noreferrer">
                     <FaGithub className="icons" />
                   </a>
                 </div>
@@ -74,12 +75,13 @@ const Footer = () => {
                   <a
                     href="https://www.instagram.com/urvish_j_p/"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <FaInstagram className="icons" />
                   </a>
                 </div>
                 <div>
-                  <a href="https://twitter.com/UrvishJP" target="_blank">
+                  <a href="https://twitter.com/UrvishJP" target="_blank" rel="noreferrer">
                     <FaTwitter className="icons" />
                   </a>
                 </div>
@@ -87,6 +89,7 @@ const Footer = () => {
                   <a
                     href="https://www.facebook.com/urvish.prajapati.167"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <FaFacebook className="icons" />
                   </a>
