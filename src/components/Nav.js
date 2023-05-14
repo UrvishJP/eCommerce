@@ -246,7 +246,7 @@ const Nav = () => {
           <li>
             <NavLink to="/cart" className="navbar-link cart-trolley--link">
               <FiShoppingCart className="cart-trolley" onClick={() => setMenuIcon(false)}/>
-              <span className="cart-total--item"> {total_item} </span>
+              <span className="cart-total--item" onClick={() => setMenuIcon(false)}> {total_item} </span>
             </NavLink>
           </li>
         </ul>
